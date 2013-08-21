@@ -3,17 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>&lt;my-element&gt;</title>
-
-	<!-- Importing Web Component's Polyfill -->
-	<script src="lib/polymer.min.js"></script>
-
-	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/my-element.html">
 </head>
 <body>
-
 	<!-- Using Custom Elements -->
-	<x-foo></x-foo>
+	<my-element><span>value</span></my-element>
 
+	<template>
+		My element <content selector="span"></content>.
+	</template>
+
+	<script>
+		var proto = Object.create(HTMLElement.prototype);
+
+		proto.createdCallback = function() {
+			var template = document.querySelector('template').content;
+
+			this.createShadowRoot().appendChild(template.cloneNode(true));
+		};
+
+		document.register('my-element', { prototype: proto });
+	</script>
 </body>
 </html>
