@@ -25,7 +25,7 @@ TODO: Write a project description
 3. Start using it!
 
 	```html
-	<my-element user="wmartins" size="bigger"></my-element>
+	<twitter-image user="wmartins" size="bigger"></twitter-image>
 	```
 
 ## Options
