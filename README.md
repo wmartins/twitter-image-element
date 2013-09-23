@@ -55,6 +55,8 @@ original 	| original | original
 
 ## History
 
+* v0.1.0 September 23, 2013
+	* Released first version of twitter image element
 * v0.0.1 August 19, 2013
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
