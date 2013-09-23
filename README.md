@@ -1,12 +1,12 @@
-# &lt;my-element&gt;
+# &lt;twitter-image&gt;
 
 TODO: Write a project description
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [William Martins](https://github.com/wmartins).
 
 ## Demo
 
-> [Check it live](http://customelements.github.io/boilerplate-element).
+> [Check it live](http://wmartins.github.io/twitter-image-element).
 
 ## Usage
 
@@ -19,22 +19,30 @@ TODO: Write a project description
 2. Import Custom Element:
 
 	```html
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/twitter-image.html">
 	```
 
 3. Start using it!
 
 	```html
-	<my-element></my-element>
+	<my-element user="wmartins" size="bigger"></my-element>
 	```
 
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+`user`      | *string*                  | ``               | Twitter account username
+`size`      | `normal`, `bigger`, `mini`, `original` 	   | `normal`               | Image's dimension 
+
+### Dimensions by `size` option
+
+Size 		| Width	| Height
+---			| ---	| ---
+normal		| 48px	| 48px
+bigger		| 73px	| 73px
+mini 		| 24px	| 24px
+original 	| original | original
 
 
 ## Contributing
