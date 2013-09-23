@@ -1,6 +1,6 @@
 # &lt;twitter-image&gt;
 
-TODO: Write a project description
+Web Component wrapper for Twitter image using Polymer.
 
 > Maintained by [William Martins](https://github.com/wmartins).
 
